@@ -27,16 +27,16 @@ public class StringMethods {
 
     }
 
-    private static String reverse(String str) {   //method to reverse a given string.
+    public static String reverse(String str) {   //method to reverse a given string.
         String lower = str.toLowerCase();
         String rev = "";
         for (int i = lower.length(); i > 0; --i) {
             rev = rev + (lower.charAt(i - 1));
         }
-        return "Reverse string:" + rev;
+        return  rev;
     }
 
-    private static String printDuplicateCh(String str) {//Method to print duplicate characters from a string.
+    public static String printDuplicateCh(String str) {//Method to print duplicate characters from a string.
         String lower = str.toLowerCase();
         String characters = "";
         String duplicate = "";
@@ -48,10 +48,10 @@ public class StringMethods {
             }
             characters += current;
         }
-        return "Duplicate charactes are:" + duplicate;
+        return duplicate;
     }
 
-    private static boolean anagram(String str) { //Method to check if two strings are anagrams of each other.
+    public static boolean anagram(String str) { //Method to check if two strings are anagrams of each other.
         String strTest = "java";
         String str1 = strTest.toLowerCase();
         String lower = str.toLowerCase();
@@ -68,7 +68,7 @@ public class StringMethods {
         return false;
     }
 
-    private static int permutationOfString(String str) { //Method to find all the permutations of a string
+    public static int permutationOfString(String str) { //Method to find all the permutations of a string
         int fac = 1;
         for (int i = 1; i <= str.length(); i++) {
             fac = fac * i;
@@ -76,7 +76,7 @@ public class StringMethods {
         return fac;
     }
 
-    private static boolean containsOnlyDigits(String str) { //Method to check if a string contains only digits.
+    public static boolean containsOnlyDigits(String str) { //Method to check if a string contains only digits.
         for (int i = 0; i < str.length(); i++) {
             if (!Character.isDigit(str.charAt(i))) {
                 return false;
@@ -85,7 +85,7 @@ public class StringMethods {
         return true;
     }
 
-    private static String noOfVowelsAndConsonants(String str) { //Method to count a number of vowels and consonants in a given string.
+    public static String noOfVowelsAndConsonants(String str) { //Method to count a number of vowels and consonants in a given string.
         int vowels = 0;
         int consonant = 0;
         for (int i = 0; i < str.length(); i++) {
@@ -98,7 +98,7 @@ public class StringMethods {
         return "Vowels:" + vowels + "\t" + "Consonant:" + consonant;
     }
 
-    private static String occurrence(String str) {
+    public static String occurrence(String str) {
         char check = 'a';
         int count = 0;
         for (int i = 0; i < str.length(); i++) {
@@ -110,7 +110,7 @@ public class StringMethods {
     }
 
 
-    private static String nonRepeatCh(String str) { //Method to print the first non-repeated character from a string.
+    public static String nonRepeatCh(String str) { //Method to print the first non-repeated character from a string.
         String lower = str.toLowerCase();
         char ch = 0;
         for (int i = 0; i < lower.length(); i++) {
@@ -130,7 +130,7 @@ public class StringMethods {
     }
 
 
-    private static int convertToInt(String str) {//Method to convert a given String into int like the Integer.parseInt().
+    public static int convertToInt(String str) {//Method to convert a given String into int like the Integer.parseInt().
         char[] ch = new char[str.length()];
         int n = 0;
         for (int i = 0; i < str.length(); i++) {
@@ -231,9 +231,9 @@ public class StringMethods {
         char rem = 'a';
         String nou = "";
         char[] st = str.toCharArray();
-        for (int i=0;i<str.length();i++){
-            if(st[i] != rem){
-                nou = nou+st[i];
+        for (int i = 0; i < str.length(); i++) {
+            if (st[i] != rem) {
+                nou = nou + st[i];
             }
         }
         return "String without char 'a' : " + nou;
