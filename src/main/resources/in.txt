@@ -1,4 +1,9 @@
 Adrian,Botezan,1992-12-09
-Tom,Hardy,1974-08-10
+Tom,Hardy,1974-10-10
 Ion,Marius,1980-07-05
-
+John,Deere,1979-06-04
+Alex,Dobre,1999-10-02
+Stefan,Marin,2001-01-07
+Sorin,Alexandru,2008-02-07
+Daniel,Onetiu,1999-10-02
+Liviu,Niculae,1992-10-07
