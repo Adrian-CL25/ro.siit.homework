@@ -5,7 +5,7 @@ public class PersonsByThreads extends Thread {
     public void run() {
 
         for(int i = 1 ; i<=100; i++){
-            System.out.println("Person number: "+ i +" " + TicketType.tickets.generateRandomTickets());
+            System.out.println("Person number: "+ i +" " + TicketType.generateRandomTickets());
         }
 
     }
